@@ -36,7 +36,7 @@ export const slides: SlideData[] = [
         type: "standard",
         headline: "ENGINEERING TRUST",
         q: "What did I learn?",
-        a: "I discovered that **Trust** is not an abstract feeling, but an engineered variable. To solve the 'Stranger Gamble', I combined **Semiotics** (Trust Badges) with a **'Visual Help'** feature—allowing residents to video-stream issues *before* booking. I learned that true security is built by replacing ambiguity with **Transparent Visual Data**, effectively manipulating user perception from fear to confidence.",
+        a: "I discovered that **Trust** is not an abstract feeling, but an engineered variable. To solve the 'Stranger Gamble', I combined **Semiotics** (Trust Badges) with a **'Visual Help'** feature, allowing residents to video-stream issues *before* booking. I learned that true security is built by replacing ambiguity with **Transparent Visual Data**, effectively manipulating user perception from fear to confidence.",
     },
     {
         id: 5,
@@ -79,7 +79,7 @@ export const slides: SlideData[] = [
         type: "standard",
         headline: "SYSTEMATIZING CHAOS",
         q: "What am I good at?",
-        a: "My core strength lies in **Systematizing Chaos**. I excel at taking the team's abstract, scattered brainstorm sessions and locking them into a rigid, logical Figma Grid System. I apply **Occam's Razor** to user flows—ruthlessly cutting out unnecessary steps to find the most direct path to a solution.",
+        a: "My core strength lies in **Systematizing Chaos**. I excel at taking the team's abstract, scattered brainstorm sessions and locking them into a rigid, logical Figma Grid System. I apply **Occam's Razor** to user flows, ruthlessly cutting out unnecessary steps to find the most direct path to a solution.",
     },
     {
         id: 11,
@@ -100,14 +100,14 @@ export const slides: SlideData[] = [
         type: "standard",
         headline: "USABILITY VS VANITY",
         q: "How did I learn from mistakes?",
-        a: "I initially designed the 'Panic Button' to be small and elegant to fit the minimalist aesthetic. Simulation testing proved this was a disaster—in a panic state, fine motor skills degrade. I learned a hard lesson: **Usability must always conquer Aesthetics**. We redesigned it to be big, bold, and ugly—but functional.",
+        a: "I initially designed the 'Panic Button' to be small and elegant to fit the minimalist aesthetic. Simulation testing proved this was a disaster, in a panic state, fine motor skills degrade. I learned a hard lesson: **Usability must always conquer Aesthetics**. We redesigned it to be big, bold, and ugly, but functional.",
     },
-    {
-        id: 14,
+        {
+        id: (14),
         type: "standard",
-        headline: "UNIVERSAL LANGUAGE",
+        headline: "LOGIC AS LANGUAGE",
         q: "What I really like?",
-        a: "I loved the **Borderless Collaboration**. This project proved that code and logic are universal languages. Despite our different backgrounds, the logic of a 'Button' or a 'Database' united us. It was satisfying to see how technology dissolves geographical boundaries.",
+        a: "I loved the **Borderless Collaboration**. This project proved that while languages differ, **System Logic** is universal. Even without writing a single line of code, we aligned our mental models through **Visual Schemas** in Figma. It was satisfying to see how 'Critical Thinking' dissolved geographical boundaries better than any syntax could.",
     },
     {
         id: 15,
