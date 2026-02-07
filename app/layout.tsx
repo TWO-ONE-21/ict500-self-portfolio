@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Manrope } from "next/font/google";
 import "./globals.css";
+import NoiseOverlay from "@/components/NoiseOverlay";
+import CustomCursor from "@/components/CustomCursor";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -26,8 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${manrope.variable} antialiased bg-[#050505] text-[#ededed]`}
+        className={`${playfair.variable} ${manrope.variable} antialiased bg-[#050505] text-[#ededed] cursor-none`}
       >
+        <NoiseOverlay />
+        <CustomCursor />
         {children}
       </body>
     </html>

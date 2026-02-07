@@ -36,6 +36,8 @@ const ClassGallery = () => {
                         const rotate = index % 3 === 0 ? "rotate-2" : index % 3 === 1 ? "-rotate-3" : "rotate-1";
                         const variableY = index % 4 === 0 ? "translate-y-4" : index % 4 === 1 ? "-translate-y-6" : "translate-y-0";
 
+                        const isVideo = item === "class-02" || item === "class-10";
+
                         return (
                             <motion.div
                                 key={index}
@@ -48,8 +50,24 @@ const ClassGallery = () => {
                                     variableY
                                 )}
                             >
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
-                                <div className="absolute bottom-3 left-3">
+                                {isVideo ? (
+                                    <video
+                                        src={`/assets/${item}.mp4`}
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                                    />
+                                ) : (
+                                    <img
+                                        src={`/assets/${item}.webp`}
+                                        alt={item}
+                                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                                    />
+                                )}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 pointer-events-none"></div>
+                                <div className="absolute bottom-3 left-3 pointer-events-none">
                                     <span className="text-white/40 text-[10px] font-mono group-hover:text-[#d4af37] transition-colors">{item}</span>
                                 </div>
                             </motion.div>

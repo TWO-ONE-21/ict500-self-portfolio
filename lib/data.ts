@@ -7,6 +7,7 @@ export interface SlideData {
     q?: string;    // For standard
     a?: string;    // For standard
     background?: "video"; // For specific slides
+    img?: string; // For intro profile picture
 }
 
 export const slides: SlideData[] = [
@@ -15,8 +16,9 @@ export const slides: SlideData[] = [
         type: "intro",
         headline: "ARDO RIANDA",
         sub: "2025626618 | Student Exchange",
-        body: "Crossing the Strait of Malacca was more than a geographical shift, it was a cognitive leap. At UiTM, I stepped beyond technical syntax to master the **Architecture of Thought**. I didn't just study systems, I learned to deconstruct the human experience. This portfolio is a documentation of how I bridged Sumatera's aggressive logic with Shah Alam's cultural empathy to build 'NeighborHutz'.",    
-    },  
+        img: "/assets/me.jpg",
+        body: "Crossing the Strait of Malacca was more than a geographical shift, it was a cognitive leap. At UiTM, I stepped beyond technical syntax to master the **Architecture of Thought**. I didn't just study systems, I learned to deconstruct the human experience. This portfolio is a documentation of how I bridged Sumatera's aggressive logic with Shah Alam's cultural empathy to build 'NeighborHutz'.",
+    },
     {
         id: 2,
         type: "standard",
@@ -102,7 +104,7 @@ export const slides: SlideData[] = [
         q: "How did I learn from mistakes?",
         a: "I initially designed the 'Panic Button' to be small and elegant to fit the minimalist aesthetic. Simulation testing proved this was a disaster, in a panic state, fine motor skills degrade. I learned a hard lesson: **Usability must always conquer Aesthetics**. We redesigned it to be big, bold, and ugly, but functional.",
     },
-        {
+    {
         id: (14),
         type: "standard",
         headline: "LOGIC AS LANGUAGE",
