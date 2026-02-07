@@ -106,7 +106,7 @@ export default function Home() {
           )}
 
           {slide.type === "mentor" && (
-            <GlassCard className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-12 bg-black/40 backdrop-blur-xl border-white/5 p-16 relative z-10">
+            <GlassCard className="max-w-4xl w-full p-8 md:p-12 bg-black/20 backdrop-blur-md border border-white/10 rounded-3xl relative z-10">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
