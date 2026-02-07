@@ -14,8 +14,8 @@ export default function Home() {
     <main className="snap-y snap-mandatory h-screen w-full overflow-y-scroll scroll-smooth">
       <ParticleBackground />
 
-      {slides.map((slide) => (
-        <SnapSection key={slide.id} id={`slide-${slide.id}`}>
+      {slides.map((slide, index) => (
+        <SnapSection key={slide.id} id={`slide-${slide.id}`} index={index}>
           {/* Video Background Logic */}
           {slide.background === "video" && (
             <div className="absolute inset-0 z-0 overflow-hidden">
@@ -33,9 +33,9 @@ export default function Home() {
           )}
 
           {slide.type === "intro" && (
-            <GlassCard className="w-full max-w-4xl flex flex-col md:flex-row items-stretch bg-black/40 backdrop-blur-xl border-white/5 relative z-10 overflow-hidden min-h-[500px]">
+            <GlassCard className="w-full max-w-4xl flex flex-col md:flex-row items-stretch bg-black/40 backdrop-blur-xl border-white/5 relative z-10 overflow-hidden min-h-0 md:min-h-[500px] h-auto md:h-auto">
               <div
-                className="flex-1 flex flex-col items-center md:items-start justify-center p-8 md:p-12 relative bg-cover bg-center rounded-2xl"
+                className="w-full h-[350px] md:h-auto md:flex-1 flex flex-col items-center md:items-start justify-center p-6 md:p-12 relative bg-cover bg-center rounded-2xl shrink-0"
                 style={{ backgroundImage: slide.img ? `url('${slide.img}')` : undefined }}
               >
                 {/* Dark overlay for readability */}
@@ -46,7 +46,7 @@ export default function Home() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                    className="text-6xl md:text-8xl font-serif text-[#d4af37] tracking-tight"
+                    className="text-5xl md:text-8xl font-serif text-[#d4af37] tracking-tight"
                   >
                     {slide.headline}
                   </motion.h1>
@@ -54,7 +54,7 @@ export default function Home() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                    className="text-xl md:text-2xl text-white/90 font-light tracking-[0.2em] uppercase pl-1 shadow-black drop-shadow-md"
+                    className="text-lg md:text-2xl text-white/90 font-light tracking-[0.2em] uppercase pl-1 shadow-black drop-shadow-md"
                   >
                     {slide.sub}
                   </motion.h2>
@@ -129,15 +129,17 @@ export default function Home() {
             <motion.div
               className="w-full h-full flex items-center justify-center relative z-10"
               onViewportEnter={() => {
+                const isMobile = window.innerWidth < 768;
                 confetti({
-                  particleCount: 100,
-                  spread: 70,
+                  particleCount: isMobile ? 40 : 100,
+                  spread: isMobile ? 50 : 70,
                   origin: { y: 0.6 },
-                  colors: ['#d4af37', '#ffffff', '#e5c07b']
+                  colors: ['#d4af37', '#ffffff', '#e5c07b'],
+                  disableForReducedMotion: true
                 });
               }}
             >
-              <GlassCard className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-12 bg-black/40 backdrop-blur-xl border-white/5 p-16 relative z-10">
+              <GlassCard className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-6 md:gap-12 bg-black/40 backdrop-blur-xl border-white/5 p-6 md:p-16 relative z-10 max-h-[85vh] overflow-y-auto md:overflow-visible custom-scrollbar">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}

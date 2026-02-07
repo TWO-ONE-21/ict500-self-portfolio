@@ -27,26 +27,26 @@ const ClassGallery = () => {
                 </p>
             </div>
 
-            {/* Aesthetic Scattered Grid container - Restored "Messy" Look */}
-            <div className="w-full h-full max-h-[75vh] flex items-center overflow-x-auto no-scrollbar px-12 md:px-24">
-                <div className="grid grid-rows-2 grid-flow-col gap-12 md:gap-16 h-full items-center py-12 px-8">
+            {/* Aesthetic Scattered Grid container - Responsive Horizontal Scroll */}
+            <div className="w-full h-full max-h-[75vh] flex items-center overflow-x-auto no-scrollbar px-4 md:px-12 md:px-24">
+                <div className="grid grid-rows-1 md:grid-rows-2 grid-flow-col gap-4 md:gap-16 h-full items-center py-4 md:py-12 px-4 md:px-8">
                     {classItems.map((item, index) => {
-                        // Aesthetic logic: Restore the "Messy" scatter
+                        // Aesthetic logic: Restore the "Messy" scatter - reduced intensity on mobile
                         const isEven = index % 2 === 0;
                         const rotate = index % 3 === 0 ? "rotate-2" : index % 3 === 1 ? "-rotate-3" : "rotate-1";
-                        const variableY = index % 4 === 0 ? "translate-y-4" : index % 4 === 1 ? "-translate-y-6" : "translate-y-0";
+                        const variableY = index % 4 === 0 ? "md:translate-y-4" : index % 4 === 1 ? "md:-translate-y-6" : "md:translate-y-0"; // Disable Y scatter on mobile for cleaner scroll
 
                         const isVideo = item === "class-02" || item === "class-10";
 
                         return (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, scale: 0.8, rotate: 0 }}
+                                initial={{ opacity: 0, scale: 0.8 }}
                                 whileInView={{ opacity: 1, scale: 1, rotate: Math.random() * 4 - 2 }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
                                 className={cn(
                                     "relative h-48 md:h-56 aspect-[16/10] bg-white/5 border border-white/10 rounded-sm overflow-hidden shrink-0 group hover:z-30 hover:scale-110 hover:rotate-0 transition-all duration-500 hover:border-[#d4af37] shadow-xl hover:shadow-[#d4af37]/20",
-                                    rotate,
+                                    "md:" + rotate, // Only scatter rotate strongly on desktop
                                     variableY
                                 )}
                             >

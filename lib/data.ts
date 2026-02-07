@@ -38,7 +38,7 @@ export const slides: SlideData[] = [
         type: "standard",
         headline: "ENGINEERING TRUST",
         q: "What did I learn?",
-        a: "I discovered that **Trust** is not an abstract feeling, but an engineered variable. To solve the 'Stranger Gamble', I combined **Semiotics** (Trust Badges) with a **'Visual Help'** feature, allowing residents to video-stream issues *before* booking. I learned that true security is built by replacing ambiguity with **Transparent Visual Data**, effectively manipulating user perception from fear to confidence.",
+        a: "I discovered that **Trust** is not an abstract feeling, but an engineered variable. To solve the 'Stranger Gamble', I combined **Semiotics** (Trust Badges) with a **'Visual Help'** feature, allowing residents to video-stream issues **before** booking. I learned that true security is built by replacing ambiguity with **Transparent Visual Data**, effectively manipulating user perception from fear to confidence.",
     },
     {
         id: 5,
@@ -66,7 +66,7 @@ export const slides: SlideData[] = [
         type: "standard",
         headline: "THE CULTURAL ALGORITHM",
         q: "How did peers help?",
-        a: "As an Exchange Student from Universitas Royal, I initially viewed the concept of 'Neighborhood' through an Indonesian lens. My Malaysian peers, Amirah and Diyana, provided crucial **Cultural Contextualization**. They explained the nuances of 'Rukun Tetangga' which differs from my local context. This cross-cultural friction wasn't a barrier; it was the catalyst that made our final product culturally relevant.",
+        a: "As an Exchange Student from Universitas Royal, I initially viewed the concept of 'Neighborhood' through an Indonesian lens. My Malaysian peers, Amirah and Diyana, provided crucial **Cultural Contextualization**. They explained the nuances of 'Rukun Tetangga' which differs from my local context. This cross-cultural friction wasn't a barrier, it was the catalyst that made our final product culturally relevant.",
         background: "video",
     },
     {
