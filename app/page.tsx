@@ -65,7 +65,7 @@ export default function Home() {
           )}
 
           {slide.type === "standard" && (
-            <GlassCard className="w-full max-w-3xl flex flex-col items-center text-center space-y-8 bg-black/30 backdrop-blur-lg relative z-10">
+            <GlassCard className="w-full max-w-3xl flex flex-col items-center text-center space-y-8 bg-black/10 backdrop-blur-sm relative z-10">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
