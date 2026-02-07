@@ -14,29 +14,28 @@ export const slides: SlideData[] = [
         id: 1,
         type: "intro",
         headline: "ARDO RIANDA",
-        sub: "Logic Architect | Exchange Scholar",
-        body: "Crossing the Strait of Malacca was more than a geographical shift; it was a cognitive leap. At UiTM, I didn't just learn to write code; I learned to deconstruct the human experience. This portfolio is a documentation of how I bridged Jakarta's aggressive logic with Shah Alam's cultural empathy to build 'NeighborHutz'.",
-    },
+        sub: "2025626618 | Student Exchange",
+        body: "Crossing the Strait of Malacca was more than a geographical shift, it was a cognitive leap. At UiTM, I stepped beyond technical syntax to master the **Architecture of Thought**. I didn't just study systems, I learned to deconstruct the human experience. This portfolio is a documentation of how I bridged Sumatera's aggressive logic with Shah Alam's cultural empathy to build 'NeighborHutz'.",    },
     {
         id: 2,
         type: "standard",
-        headline: "INTERFACE PSYCHOLOGY",
+        headline: "CRITICAL FILTERING",
         q: "What am I learning?",
-        a: "I went beyond standard UI design to study **Interface Psychology**. Specifically, I mastered the discipline of 'Low-Fidelity Prototyping'. In an era obsessed with aesthetics, I learned the power of the **'Grayscale Constraint'**—forcing myself to design strictly in black and white. This wasn't a limitation, but a strategic choice to ensure our navigation logic was sound before being masked by the beauty of color.",
+        a: "I am learning that **Critical Thinking is the filter for Creative Output**. While I mastered Figma independently, this course taught me to identify my own cognitive biases, specifically the **'Appeal to Novelty'**. I learned to question my own design choices—imposing a **'Grayscale Constraint'** not as a technical step, but as a critical method to ensure logic prevailed over mere decoration.",
     },
-    {
+        {
         id: 3,
         type: "standard",
-        headline: "MINIMIZING CHAOS",
+        headline: "SCAMPER ADAPTATION",
         q: "Why am I learning it?",
-        a: "Because 'NeighborHutz' is fundamentally a safety application. In emergency scenarios, a confused user is a dangerous outcome. I studied these techniques to minimize **Cognitive Load**. By applying **Fitts' Law** and clear hierarchy, I aimed to shave off critical milliseconds from the user's reaction time. I learned this because in safety tech, clarity isn't just a preference; it's a lifeline.",
+        a: "Our team research identified 'Information Overload' in WhatsApp groups as a major pain point. To address this collective finding, I applied the **SCAMPER 'Adapt' technique** to our workflow. This framework guided us to transform a standard feed into an **AI News Summary**. I learned that my value lies in providing the theoretical structure that turns our team's chaotic ideas into organized solutions.",
     },
     {
         id: 4,
         type: "standard",
         headline: "ENGINEERING TRUST",
-        q: "What did I learn about this project?",
-        a: "I discovered that 'Trust' is not an abstract feeling, but an engineered variable. A 'Verified Badge' or a 'Panic Button' are psychological anchors. Through this project, I learned how to use **Semiotics** (visual symbols) to manipulate user perception, making strangers feel like neighbors and establishing a sense of security in a digital environment.",
+        q: "What did I learn?",
+        a: "I discovered that **Trust** is not an abstract feeling, but an engineered variable. To solve the 'Stranger Gamble', I combined **Semiotics** (Trust Badges) with a **'Visual Help'** feature—allowing residents to video-stream issues *before* booking. I learned that true security is built by replacing ambiguity with **Transparent Visual Data**, effectively manipulating user perception from fear to confidence.",
     },
     {
         id: 5,
@@ -55,9 +54,9 @@ export const slides: SlideData[] = [
     {
         id: 7,
         type: "standard",
-        headline: "FILTERING NOISE",
+        headline: "SCOPE MANAGEMENT",
         q: "What prevented me?",
-        a: "The biggest hurdle was **Feature Creep** driven by enthusiasm. The team had brilliant but overwhelming ideas—from Drone surveillance to AI Chatbots. My challenge was acting as the 'Logic Filter'. It was difficult to say 'No' to good ideas, but I had to prioritize the **Minimum Viable Product (MVP)** to ensure we delivered a functional core within the deadline.",
+        a: "Our brainstorming sessions generated ambitious ideas like **Complex Gamification** and **Neighborhood Marketplace**. However, realizing the deadline, I stepped in to **prioritize scope**. We classified these extra features as 'Phase 2', allowing us to dedicate our full focus to refining the **Interaction Logic** of the 'AI Concierge' and 'Feed Safety'. My goal was to ensure our **Prototype** proved structural integrity without getting distracted by non-essential features.",
     },
     {
         id: 8,
@@ -91,9 +90,9 @@ export const slides: SlideData[] = [
     {
         id: 12,
         type: "standard",
-        headline: "THE PRIVACY PARADOX",
+        headline: "THE SECURITY LOOP",
         q: "What made me really think?",
-        a: "The **'Stranger Danger' Paradox** kept me up at night. How do we verify a neighbor's identity without violating their privacy? This forced me to engage in deep Critical Thinking, eventually leading to the design of a 'Tiered Badge System'. It was a complex problem that required balancing ethical responsibility with technical transparency.",
+        a: "The 'Stranger Danger' Paradox. How to verify visitors without friction? I utilized the **'Put to Another Use' principle** by repurposing live streaming for security. We built the **Real-time Gatekeeper Alert**, allowing residents to verify a visitor's face and plate via video feed. This closed the security loop, granting access with total confidence.",
     },
     {
         id: 13,
