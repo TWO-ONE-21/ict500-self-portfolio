@@ -15,7 +15,8 @@ export const slides: SlideData[] = [
         type: "intro",
         headline: "ARDO RIANDA",
         sub: "2025626618 | Student Exchange",
-        body: "Crossing the Strait of Malacca was more than a geographical shift, it was a cognitive leap. At UiTM, I stepped beyond technical syntax to master the **Architecture of Thought**. I didn't just study systems, I learned to deconstruct the human experience. This portfolio is a documentation of how I bridged Sumatera's aggressive logic with Shah Alam's cultural empathy to build 'NeighborHutz'.",    },
+        body: "Crossing the Strait of Malacca was more than a geographical shift, it was a cognitive leap. At UiTM, I stepped beyond technical syntax to master the **Architecture of Thought**. I didn't just study systems, I learned to deconstruct the human experience. This portfolio is a documentation of how I bridged Sumatera's aggressive logic with Shah Alam's cultural empathy to build 'NeighborHutz'.",    
+    },  
     {
         id: 2,
         type: "standard",
@@ -23,7 +24,7 @@ export const slides: SlideData[] = [
         q: "What am I learning?",
         a: "I am learning that **Critical Thinking is the filter for Creative Output**. While I mastered Figma independently, this course taught me to identify my own cognitive biases, specifically the **'Appeal to Novelty'**. I learned to question my own design choices—imposing a **'Grayscale Constraint'** not as a technical step, but as a critical method to ensure logic prevailed over mere decoration.",
     },
-        {
+    {
         id: 3,
         type: "standard",
         headline: "SCAMPER ADAPTATION",
