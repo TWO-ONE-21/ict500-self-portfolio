@@ -16,7 +16,7 @@ const SnapSection = ({ children, className, id, index = 0 }: SnapSectionProps) =
         <section
             id={id}
             className={cn(
-                "h-screen w-full snap-start flex items-center justify-center relative overflow-hidden p-6",
+                "h-screen w-full snap-start snap-always flex items-center justify-center relative overflow-hidden p-6",
                 className
             )}
         >
